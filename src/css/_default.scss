@@ -1,0 +1,332 @@
+
+%defaultFontFormat { 
+    font-family: $fontFamily;
+	color:$primaryColor;
+}
+
+
+
+%defaultFormFormat { 
+    outline: none;
+    border-top:none;
+    border-bottom:none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    padding-bottom:5px;
+    padding-left:25px;
+    border-bottom: 1px solid rgba(224, 224, 224, 0.8);
+ 
+}
+
+img {width: 100%;}
+
+%inputError { 
+   
+    border-bottom: 1px solid red;
+ 
+}
+
+.width-inherit {
+    width:inherit!important;
+}
+
+%formFocus { 
+
+    border-color: rgb(209, 209, 209);
+
+}
+
+%flexCenter{
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    
+}
+
+%inputIcon { 
+    position:absolute;top:40px;
+
+}
+
+  
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+h1 { 
+   font-size:3.5rem;
+}
+
+body,html {
+    @extend %defaultFontFormat;
+    height: 100%;
+    line-height: 1.7;
+  }
+
+  a {
+    color:$primaryColor;
+    transition: color 0.4s; 
+    &:hover {
+
+        text-decoration: $noDecoration; 
+        color:$linkColor;
+
+    }
+    &:focus{
+
+        outline:none!important; 
+    }
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0px;
+}
+
+/*Medium Screen */
+@media (max-width: 768px){
+
+ h1 { 
+    font-size: 2.5rem;
+
+ }   
+ 
+ h2 { 
+    font-size: 2.2rem;
+    
+ }  
+
+ h3 { 
+    font-size: 2rem;
+    
+ }   
+ 
+ h4 { 
+    font-size:2rem;
+    
+ }  
+ 
+ h5 { 
+    font-size: 1.5rem;
+    
+ }
+
+ h6 { 
+    font-size: 1rem;
+    
+ }
+
+}
+
+p {
+    @extend %defaultFontFormat; 
+    padding-top:10px;padding-bottom:10px;
+}
+
+ul, li {
+	margin: 0px;
+	list-style-type: none;
+}
+
+/* FORMS */
+
+input {
+    @extend %defaultFormFormat; 
+}
+/* BOOTSTRAP FORM OVERWRITE*/
+.form-control {
+
+    @extend %defaultFormFormat; 
+
+&:focus{
+
+    box-shadow:none;
+    
+}
+
+}
+
+textarea {
+    @extend %defaultFormFormat;
+    &:focus{ 
+    @extend %formFocus;
+    }
+}
+
+label,.text-muted {
+    color:$subColor!important;
+}
+
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+
+.min-width {
+
+    min-height:60vh;  
+    margin:15px 0;  
+}
+
+@media (max-width: 768px){
+
+    .content{ padding-top:30px;}
+
+    .min-width{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    };
+    
+
+  
+
+}
+
+.text-primary{color:$textPrimary}
+
+.space-top { padding-top:7rem;}
+
+
+.animated.delay-6s {
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+}
+
+.animated.delay-7s {
+    -webkit-animation-delay: 7s;
+    animation-delay: 7s;
+}
+
+
+/* Buttons */
+
+.btn {
+    border:none;cursor:pointer;
+    padding:10px 35px; 
+    border-radius: 100px;
+    font-weight: bold;
+    &:focus{
+        outline: 0!important;
+        border:none!important;
+        background-color:none!important;
+    }
+
+}
+
+.btn-primary {
+ 
+ background:$primaryBtnBg; 
+ transition:box-shadow 0.4s;
+
+ &:hover{
+    
+    box-shadow:$btnShadow;
+    
+}
+
+}
+
+.btn-secondary {
+    
+    background:$secondaryBtnBg; 
+    transition:box-shadow 0.4s;
+
+    &:hover { box-shadow:$btnShadow; }
+
+}
+
+.btn-sm {
+
+    font-size:$fontSize; 
+}
+
+
+.btn-outline-primary {
+    color: #fff; 
+    border:1px solid #fff;
+
+     &:hover{ 
+         border:1px solid #fff;
+         background-color: #fff;
+         color:$linkColor;
+     }
+}
+
+
+.input-error { 
+
+@extend %inputError;
+
+}
+
+.bg-light {background:$bgLight}
+.bg-orange {background:$bgOrange}
+.bg-white {background:$bgWhite;}
+
+
+
+.text-orange{ color:$linkColor}
+
+.scrollbar::-webkit-scrollbar-track
+{
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: $bgWhite;
+}
+
+.scrollbar::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: $bgWhite;
+}
+
+.scrollbar::-webkit-scrollbar-thumb
+{
+	background-color: #ccc;
+	border: 0;
+}
+
+
+/* display 
+
+.hamburger-box { 
+    width:20px; 
+    height:15px;
+}
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before { 
+    width:20px; 
+    height:2px; 
+
+}
+.hamburger--slider .hamburger-inner:before { 
+
+    top:5px;
+
+}
+
+.hamburger--slider .hamburger-inner:after {
+    top: 10px;
+}
+.hamburger.is-active .hamburger-inner:before {
+    top: 20px;
+}
+
+.hamburger.is-active .hamburger-inner:after {
+    top: 20px;
+}
+*/

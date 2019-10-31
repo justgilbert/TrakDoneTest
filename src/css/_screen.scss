@@ -1,0 +1,29 @@
+/*
+Price
+*/
+
+.screen-sm {display: none!important;}
+
+
+/*Small Login Screen*/
+@media (max-width: 576px){
+
+    
+    }
+    
+    /*Medium Screen */
+    @media (max-width: 768px){
+
+        .screen-lg {display: none!important;}
+        .screen-sm {display: flex!important;}
+
+
+
+    }
+    
+    /*Wide Screen*/
+    @media (max-width: 992px){
+
+ 
+    }
+

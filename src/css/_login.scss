@@ -1,0 +1,50 @@
+
+.td_login_wrap .btn {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.navbar {    box-shadow: -1px 4px 28px -16px #ccc;}
+
+.td_login_wrap{
+
+    width: 960px;
+    background: #fff;
+    border-radius: 10px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 100px 85px 100px 85px;
+
+
+}
+
+
+/*Small Login Screen*/
+@media (max-width: 576px){
+    .td_login_wrap {
+      margin:15px;
+      .login-img {display:none;}
+    }
+    
+    }
+    
+    /*Medium Screen */
+    @media (max-width: 768px){
+    .td_login_wrap {
+        margin:15px;
+        padding:$loginSmPadding;
+    }
+    
+    }
+    
+    /*Wide Screen*/
+    @media (max-width: 992px){
+    .td_login_wrap {
+        margin:15px;
+        padding:$loginSmPadding;
+    }
+       
+    }
+    
+    

@@ -1,0 +1,107 @@
+/*
+Price
+*/
+
+
+.slider {
+    max-width: 580px;
+    height: 532px;
+    margin:0 auto;
+    
+    position: relative;
+  }
+  .slide1,.slide2,.slide3,.slide4,.slide5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .slide1 {
+   
+        background-size: cover;
+      animation:fade 4s infinite;
+  -webkit-animation:fade 4s infinite;
+  
+  } 
+  .slide2 {
+    background: url(images/Build_2.png)no-repeat center;
+        background-size: cover;
+      animation:fade2 4s infinite;
+  -webkit-animation:fade2 4s infinite;
+  }
+  .slide3 {
+      background: url(images/Build_3.png)no-repeat center;
+       
+      animation:fade3 4s infinite;
+  -webkit-animation:fade3 4s infinite;
+  }
+  @keyframes fade
+  {
+    0%   {opacity:1}
+    33.333% { opacity: 0}
+    66.666% { opacity: 0}
+    100% { opacity: 1}
+  }
+  @keyframes fade2
+  {
+    0%   {opacity:0}
+    33.333% { opacity: 1}
+    66.666% { opacity: 0 }
+    100% { opacity: 0}
+  }
+  @keyframes fade3
+  {
+    0%   {opacity:0}
+    33.333% { opacity: 0}
+    66.666% { opacity: 1}
+    100% { opacity: 0}
+  }
+
+
+
+.integrations {
+
+    .intro {
+        padding-top:5rem;
+    }
+
+    .client {
+        padding:15px;
+        box-shadow: $box-shadow;
+        text-align: center;
+        border-radius: $radius;
+ 
+     
+     
+    }
+  
+}
+
+
+
+
+/*Small Login Screen*/
+@media (max-width: 576px){
+
+    .slider {
+        max-width: 380px;
+        height: 349px;
+    
+    
+    } 
+    
+    }
+    
+    /*Medium Screen */
+    @media (max-width: 768px){
+
+        .integrations .intro { 
+            padding-top:.5rem;
+        }
+
+    }
+    
+    /*Wide Screen*/
+    @media (max-width: 992px){
+ 
+    }
+

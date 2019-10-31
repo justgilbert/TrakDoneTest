@@ -1,0 +1,33 @@
+
+@import './variables'; 
+@import './default'; 
+@import './hero'; 
+@import './login'; 
+@import './header'; 
+@import './features'; 
+@import './footer';
+@import './screen';
+@import './get-more-done';
+@import './get-access';
+@import './mobile-nav';
+
+.td_wrap { 
+ 
+ @extend %flexCenter; 
+ 
+ min-height: 100vh;
+ background:$gradientBg;
+ align-items: center;
+ justify-content: center;
+}
+
+
+.input-icon {
+    @extend %inputIcon; 
+}
+
+
+
+
+
+

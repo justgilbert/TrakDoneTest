@@ -1,0 +1,33 @@
+
+/* Header */
+.navbar { 
+    background:#fff;
+    .closebtn {right:5px;}
+
+}
+
+.navbar-brand {box-shadow:none; }
+
+
+.td-nav-wrap { 
+
+    .td-nav-item{
+    padding:0 10px;
+} 
+
+.white-space {
+
+    padding:0 25px;
+}
+
+
+a { 
+    color:$primaryColor;
+&:hover{ 
+
+    color:$linkColor;
+}
+
+} 
+
+}
