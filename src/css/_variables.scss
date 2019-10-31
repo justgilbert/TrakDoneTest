@@ -1,0 +1,57 @@
+
+/*Text Colors*/
+$primaryColor:#77838a;
+$textPrimary:#00aeef!important;
+$secondaryColor: rgb(158, 158, 158);
+$subColor:#b5bdc1;
+$linkColor:#ff672b;
+$linkHover:#f1571a;
+$errorColor:#ed1c24;
+$bgLight:#f3f5f8; 
+$bgOrange: #ff672b;
+$bgWhite:#fff;
+
+/*Fonts*/
+$fontFamily: 'Muli', sans-serif;
+$fontSizeSm:10px;
+$fontSize: 14px; 
+$fontSizeMd: 16px; 
+$fontsizeLg:18px;
+$fontsizeTitle:24px;
+
+$transitionSpeed : all 0.4s; 
+
+$noDecoration: none; 
+
+/*Background Colors*/
+$gradientBg:linear-gradient(-135deg, #c850c0, #4158d0);
+$primaryBtnBg:linear-gradient(90deg, rgba(255,7,111,1) 0%, rgba(255,103,43,1) 50%, rgba(252,176,69,1) 100%);
+$secondaryBtnBg:linear-gradient(90deg, rgba(6,170,231,1) 0%, rgba(0,174,239,1) 35%, rgba(0,174,239,1) 100%);
+$primaryBtnBgHover:linear-gradient(90deg, rgba(252,176,69,1) 0%, rgba(255,103,43,1) 50%, rgba(255,7,111,1) 100%);
+$btnShadow: -2px 14px 25px -16px rgba(255,103,43,1);
+$box-shadow:0px 0px 14px -7px rgba(0,0,0,0.29);
+$gradientSpeed:all  0.3s linear;
+$contentBg: #edf2f5;
+
+
+/* Screens */
+
+$smPhone:320px; 
+$mdPhone:480px; 
+$tablet:992px;
+$laptop:1200px; 
+$lgDesktop:1820px; 
+
+
+
+/*General*/
+$radius:10px;
+$radiusLg:25px;
+$fullWidth:100%;
+$paddingContent:20px;
+$loginPadding: 120px 95px 120px 95px;
+$loginSmPadding: 50px 25px 50px 25px;
+
+
+
+

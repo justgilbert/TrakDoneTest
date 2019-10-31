@@ -1,0 +1,74 @@
+/*
+Price
+*/
+
+
+footer{
+
+    font-size:$fontSize;
+    .min-width { 
+
+        min-height:15vh;
+    
+    }
+
+    .logo-footer { 
+        width:70px;
+    }
+       
+
+.footer-links {     
+
+    padding:20px 0;
+
+    a {
+
+        padding:0 25px;
+        
+
+    }
+    .copyright{ 
+        text-align: right;
+    }
+}
+
+}
+
+/*Small Login Screen*/
+@media (max-width: 576px){
+
+    
+    }
+    
+    /*Medium Screen */
+    @media (max-width: 768px){
+
+        footer{
+
+            .min-width { 
+
+                min-height:20vh;
+            
+            }
+            
+
+        .footer-links {   
+
+            text-align: center!important;
+
+            .copyright{ 
+                text-align: center;
+            }
+
+        }
+      
+    }
+  
+
+    }
+    
+    /*Wide Screen*/
+    @media (max-width: 992px){
+ 
+    }
+

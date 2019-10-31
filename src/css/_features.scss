@@ -1,0 +1,49 @@
+
+.features {
+
+    .container { 
+
+        background:url(./../images/dotted-line.png) 50% 45% no-repeat; 
+        
+        }
+        
+    .min-width { min-height: 55vh;}
+    .img-container { padding:$paddingContent}
+}
+
+.get-access { 
+    .get-access-bg {
+   background:url(./../images/get-access-bg.jpg) center no-repeat;background-size: cover;
+}
+}
+
+@media (max-width: 768px){
+
+}
+
+/*Small Login Screen*/
+@media (max-width: 576px){
+
+    
+.features {
+
+    .container {background:none!important;}
+    .min-width { min-height: 40vh;}
+
+}
+
+ }
+    
+/*Medium Screen */
+@media (max-width: 768px){
+
+}
+    
+/*Wide Screen*/
+@media (max-width: 992px){
+  
+       
+}
+    
+    
+    

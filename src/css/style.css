@@ -1,0 +1,577 @@
+/*Text Colors*/
+/*Fonts*/
+/*Background Colors*/
+/* Screens */
+/*General*/
+body, html, p {
+  font-family: "Muli", sans-serif;
+  color: #77838a;
+}
+
+input, .form-control, textarea {
+  outline: none;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  padding-bottom: 5px;
+  padding-left: 25px;
+  border-bottom: 1px solid rgba(224, 224, 224, 0.8);
+}
+
+img {
+  width: 100%;
+}
+
+.input-error {
+  border-bottom: 1px solid red;
+}
+
+.width-inherit {
+  width: inherit !important;
+}
+
+textarea:focus {
+  border-color: #d1d1d1;
+}
+
+.td_wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 15px;
+}
+
+.input-icon {
+  position: absolute;
+  top: 40px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+body, html {
+  height: 100%;
+  line-height: 1.7;
+}
+
+a {
+  color: #77838a;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ff672b;
+}
+
+a:focus {
+  outline: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+}
+
+/*Medium Screen */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  h5 {
+    font-size: 1.5rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+}
+
+p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+ul, li {
+  margin: 0px;
+  list-style-type: none;
+}
+
+/* FORMS */
+/* BOOTSTRAP FORM OVERWRITE*/
+.form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+label, .text-muted {
+  color: #b5bdc1 !important;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.min-width {
+  min-height: 60vh;
+  margin: 15px 0;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding-top: 30px;
+  }
+  .min-width {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.text-primary {
+  color: #00aeef !important;
+}
+
+.space-top {
+  padding-top: 7rem;
+}
+
+.animated.delay-6s {
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+}
+
+.animated.delay-7s {
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
+}
+
+/* Buttons */
+.btn {
+  border: none;
+  cursor: pointer;
+  padding: 10px 35px;
+  border-radius: 100px;
+  font-weight: bold;
+}
+
+.btn:focus {
+  outline: 0 !important;
+  border: none !important;
+  background-color: none !important;
+}
+
+.btn-primary {
+  background: -webkit-gradient(linear, left top, right top, from(#ff076f), color-stop(50%, #ff672b), to(#fcb045));
+  background: linear-gradient(90deg, #ff076f 0%, #ff672b 50%, #fcb045 100%);
+  -webkit-transition: -webkit-box-shadow 0.4s;
+  transition: -webkit-box-shadow 0.4s;
+  transition: box-shadow 0.4s;
+  transition: box-shadow 0.4s, -webkit-box-shadow 0.4s;
+}
+
+.btn-primary:hover {
+  -webkit-box-shadow: -2px 14px 25px -16px #ff672b;
+          box-shadow: -2px 14px 25px -16px #ff672b;
+}
+
+.btn-secondary {
+  background: -webkit-gradient(linear, left top, right top, from(#06aae7), color-stop(35%, #00aeef), to(#00aeef));
+  background: linear-gradient(90deg, #06aae7 0%, #00aeef 35%, #00aeef 100%);
+  -webkit-transition: -webkit-box-shadow 0.4s;
+  transition: -webkit-box-shadow 0.4s;
+  transition: box-shadow 0.4s;
+  transition: box-shadow 0.4s, -webkit-box-shadow 0.4s;
+}
+
+.btn-secondary:hover {
+  -webkit-box-shadow: -2px 14px 25px -16px #ff672b;
+          box-shadow: -2px 14px 25px -16px #ff672b;
+}
+
+.btn-sm {
+  font-size: 14px;
+}
+
+.btn-outline-primary {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-outline-primary:hover {
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #ff672b;
+}
+
+.bg-light {
+  background: #f3f5f8;
+}
+
+.bg-orange {
+  background: #ff672b;
+}
+
+.bg-white {
+  background: #fff;
+}
+
+.text-orange {
+  color: #ff672b;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 5px;
+  background-color: #fff;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border: 0;
+}
+
+/* display 
+
+.hamburger-box { 
+    width:20px; 
+    height:15px;
+}
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before { 
+    width:20px; 
+    height:2px; 
+
+}
+.hamburger--slider .hamburger-inner:before { 
+
+    top:5px;
+
+}
+
+.hamburger--slider .hamburger-inner:after {
+    top: 10px;
+}
+.hamburger.is-active .hamburger-inner:before {
+    top: 20px;
+}
+
+.hamburger.is-active .hamburger-inner:after {
+    top: 20px;
+}
+*/
+.jumbotron {
+  background: #fff;
+  border-bottom-border-bottom: 1px solid #cfe3fc;
+}
+
+/*Small Login Screen*/
+/*Medium Screen */
+/*Wide Screen*/
+.td_login_wrap .btn {
+  margin: 10px 0;
+  width: 100%;
+}
+
+.navbar {
+  -webkit-box-shadow: -1px 4px 28px -16px #ccc;
+          box-shadow: -1px 4px 28px -16px #ccc;
+}
+
+.td_login_wrap {
+  width: 960px;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 100px 85px 100px 85px;
+}
+
+/*Small Login Screen*/
+@media (max-width: 576px) {
+  .td_login_wrap {
+    margin: 15px;
+  }
+  .td_login_wrap .login-img {
+    display: none;
+  }
+}
+
+/*Medium Screen */
+@media (max-width: 768px) {
+  .td_login_wrap {
+    margin: 15px;
+    padding: 50px 25px 50px 25px;
+  }
+}
+
+/*Wide Screen*/
+@media (max-width: 992px) {
+  .td_login_wrap {
+    margin: 15px;
+    padding: 50px 25px 50px 25px;
+  }
+}
+
+/* Header */
+.navbar {
+  background: #fff;
+}
+
+.navbar .closebtn {
+  right: 5px;
+}
+
+.navbar-brand {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.td-nav-wrap .td-nav-item {
+  padding: 0 10px;
+}
+
+.td-nav-wrap .white-space {
+  padding: 0 25px;
+}
+
+.td-nav-wrap a {
+  color: #77838a;
+}
+
+.td-nav-wrap a:hover {
+  color: #ff672b;
+}
+
+.features .container {
+  background: url(./../images/dotted-line.png) 50% 45% no-repeat;
+}
+
+.features .min-width {
+  min-height: 55vh;
+}
+
+.features .img-container {
+  padding: 20px;
+}
+
+.get-access .get-access-bg {
+  background: url(./../images/get-access-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+
+/*Small Login Screen*/
+@media (max-width: 576px) {
+  .features .container {
+    background: none !important;
+  }
+  .features .min-width {
+    min-height: 40vh;
+  }
+}
+
+/*Medium Screen */
+/*Wide Screen*/
+/*
+Price
+*/
+footer {
+  font-size: 14px;
+}
+
+footer .min-width {
+  min-height: 15vh;
+}
+
+footer .logo-footer {
+  width: 70px;
+}
+
+footer .footer-links {
+  padding: 20px 0;
+}
+
+footer .footer-links a {
+  padding: 0 25px;
+}
+
+footer .footer-links .copyright {
+  text-align: right;
+}
+
+/*Small Login Screen*/
+/*Medium Screen */
+@media (max-width: 768px) {
+  footer .min-width {
+    min-height: 20vh;
+  }
+  footer .footer-links {
+    text-align: center !important;
+  }
+  footer .footer-links .copyright {
+    text-align: center;
+  }
+}
+
+/*Wide Screen*/
+/*
+Price
+*/
+.screen-sm {
+  display: none !important;
+}
+
+/*Small Login Screen*/
+/*Medium Screen */
+@media (max-width: 768px) {
+  .screen-lg {
+    display: none !important;
+  }
+  .screen-sm {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+/*Wide Screen*/
+.get-more-done .min-width {
+  min-height: 40vh;
+}
+
+/*Small Login Screen*/
+/*Medium Screen */
+/*Wide Screen*/
+.get-access .min-width {
+  min-height: 40vh;
+}
+
+/*Small Login Screen*/
+/*Medium Screen */
+/*Wide Screen*/
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 0;
+  width: 100%;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: black;
+  /* Black fallback color */
+  background-color: rgba(9, 22, 53, 0.9);
+  /* Black w/opacity */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%;
+  /* 25% from the top */
+  width: 100%;
+  /* 100% width */
+  padding: 10px;
+  text-align: center;
+  /* Centered text/links */
+  margin-top: 30px;
+  /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #fff;
+  display: block;
+  /* Display block instead of inline */
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #ff672b;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 5px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/*Small Login Screen*/
+/*Medium Screen */
+/*Wide Screen*/
+.td_wrap {
+  min-height: 100vh;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */
